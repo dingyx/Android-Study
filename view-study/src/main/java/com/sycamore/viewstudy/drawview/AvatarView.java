@@ -1,8 +1,7 @@
-package com.sycamore.viewstudy.view;
+package com.sycamore.viewstudy.drawview;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
@@ -14,7 +13,6 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 
-import com.sycamore.view_study.R;
 import com.sycamore.viewstudy.utils.ViewUtils;
 
 
@@ -45,7 +43,7 @@ public class AvatarView extends View {
     }
 
     {
-        bitmap = getAvatar((int) WIDTH);
+        bitmap = ViewUtils.getAvatar(getResources(), (int) WIDTH);
     }
 
     @Override
@@ -73,19 +71,6 @@ public class AvatarView extends View {
         paint.setXfermode(null);
 
         canvas.restoreToCount(saved);
-    }
-
-
-    Bitmap getAvatar(int width) {
-        BitmapFactory.Options options = new BitmapFactory.Options();
-        // 调用 decodeResource 消耗资源 只能获取到宽高
-        options.inJustDecodeBounds = true;
-        BitmapFactory.decodeResource(getResources(), R.drawable.img, options);
-        options.inJustDecodeBounds = false;
-        // 获取图片的宽高比
-        options.inDensity = options.outWidth;
-        options.inTargetDensity = width;
-        return BitmapFactory.decodeResource(getResources(), R.drawable.img, options);
     }
 
 }

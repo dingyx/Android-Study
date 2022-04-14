@@ -1,4 +1,4 @@
-package com.sycamore.viewstudy.view;
+package com.sycamore.viewstudy.drawview;
 
 import android.content.Context;
 import android.graphics.Canvas;

@@ -1,8 +1,7 @@
-package com.sycamore.viewstudy.view;
+package com.sycamore.viewstudy.drawview;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.text.TextPaint;
@@ -11,7 +10,6 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 
-import com.sycamore.view_study.R;
 import com.sycamore.viewstudy.utils.ViewUtils;
 
 
@@ -36,7 +34,7 @@ public class ImageTextView extends View {
     }
 
     {
-        bitmap = getAvatar((int) ViewUtils.dp2px(100));
+        ViewUtils.getAvatar(getResources(),(int) ViewUtils.dp2px(100));
         textPaint.setTextSize(ViewUtils.dp2px(12));
         paint.setTextSize(ViewUtils.dp2px(12));
     }
@@ -77,19 +75,6 @@ public class ImageTextView extends View {
         index = paint.breakText(text, index, text.length(), true, getWidth() - ViewUtils.dp2px(100), cutWidth);
         canvas.drawText(text, oldIndex, index + oldIndex, 0, 50 + paint.getFontSpacing() * 2, paint);
 
-    }
-
-
-    Bitmap getAvatar(int width) {
-        BitmapFactory.Options options = new BitmapFactory.Options();
-        // 调用 decodeResource 消耗资源 只能获取到宽高
-        options.inJustDecodeBounds = true;
-        BitmapFactory.decodeResource(getResources(), R.drawable.img, options);
-        options.inJustDecodeBounds = false;
-        // 获取图片的宽高比
-        options.inDensity = options.outWidth;
-        options.inTargetDensity = width;
-        return BitmapFactory.decodeResource(getResources(), R.drawable.img, options);
     }
 
 }
