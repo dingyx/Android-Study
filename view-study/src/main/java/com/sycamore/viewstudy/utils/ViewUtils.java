@@ -44,4 +44,9 @@ public class ViewUtils {
         return BitmapFactory.decodeResource(res, R.drawable.img, options);
     }
 
+
+    public static float getZForCamera(){
+        return  -6 * Resources.getSystem().getDisplayMetrics().density;
+    }
+
 }
