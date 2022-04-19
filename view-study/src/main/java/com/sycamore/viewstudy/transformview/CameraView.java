@@ -51,7 +51,6 @@ public class CameraView extends View {
         canvas.rotate(30);
         canvas.drawBitmap(bitmap, ViewUtils.dp2px(50), ViewUtils.dp2px(50), paint);
         canvas.restore();
-        InputConfiguration
 
         // 绘制下半部分
 
