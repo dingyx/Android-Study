@@ -12,12 +12,26 @@
         <activity
             android:name="com.sycamore.viewstudy.DrawViewActivity"
             android:exported="true">
+        </activity>
+
+
+        <activity
+            android:name="com.sycamore.viewstudy.animatorview.ViewPropertyAnimatorActivity"
+            android:exported="true">
+
+        </activity>
+
+        <activity android:name="com.sycamore.viewstudy.animatorview.ObjectAnimatorActivity"
+            android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+
         </activity>
+
     </application>
 
 </manifest>

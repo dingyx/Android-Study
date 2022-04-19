@@ -5,6 +5,8 @@ import android.graphics.Bitmap;
 import android.graphics.Camera;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.hardware.camera2.params.InputConfiguration;
+import android.net.wifi.WifiConfiguration;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -49,6 +51,7 @@ public class CameraView extends View {
         canvas.rotate(30);
         canvas.drawBitmap(bitmap, ViewUtils.dp2px(50), ViewUtils.dp2px(50), paint);
         canvas.restore();
+        InputConfiguration
 
         // 绘制下半部分
 
