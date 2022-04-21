@@ -28,15 +28,25 @@
     请求行 --- GET   /users HTTP/1.1
     		  Host: api.dingyx.tech
     		  
-    method:GET
-    path:/users
-    http version:HTTP/1.1
+    method: GET
+    path: /users
+    http version: HTTP/1.1
     
     
     Headers
     	Host: api.dingyx.tech
     	Content-Type:text/plain
-    	Content-Length：
+    	Content-Length：336
+    	
+    Body	
+    	....ABCDEFG
+    
+    ```
+
+  * 报文格式：Response
+
+    ```
+    
     ```
 
     
