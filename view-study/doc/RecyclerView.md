@@ -40,7 +40,7 @@
 
 ### RecyclerView 的重要组件
 
-​	![RecyclerView 的重要组件](https://dingyx.oss-cn-shenzhen.aliyuncs.com/picgo/RecyclerView 的重要组件.png)
+​	![RecyclerView 的重要组件](https://dingyx.oss-cn-shenzhen.aliyuncs.com/picgo/RecyclerView的重要组件.png)
 
 ### View holder 究竟是什么
 
@@ -54,7 +54,7 @@
 
     > 不管 convertView 是否为空，需要重复 findViewById 
 
-    ![](https://dingyx.oss-cn-shenzhen.aliyuncs.com/picgo/没有实现 view holder 的 getView().png)
+    ![](https://dingyx.oss-cn-shenzhen.aliyuncs.com/picgo/没有实现viewholder的getView().png)
 
     > **不实现 view holder** 还是会 **复用 item view**
 
@@ -66,11 +66,11 @@
 
     > 将convertView、viewHolder 通过 setTag 绑定。 **View 的 setTag方法，可以存入一个 Object 对象**
 
-    ![](https://dingyx.oss-cn-shenzhen.aliyuncs.com/picgo/实现 view holder 的 getView().png)
+    ![](https://dingyx.oss-cn-shenzhen.aliyuncs.com/picgo/实现viewholder的getView().png)
 
 * item view 和 view holder 一一对应
 
-  ![](https://dingyx.oss-cn-shenzhen.aliyuncs.com/picgo/item view 和 view holder 一一对应.png)
+  ![](https://dingyx.oss-cn-shenzhen.aliyuncs.com/picgo/itemview和viewholder一一对应.png)
 
 * view holder 解决重复 findViewById 来提高效率
 
@@ -78,7 +78,7 @@
 
   View Holder 最佳实践
 
-  ![](https://dingyx.oss-cn-shenzhen.aliyuncs.com/picgo/View Holder 最佳实践.png)
+  ![](https://dingyx.oss-cn-shenzhen.aliyuncs.com/picgo/ViewHolder最佳实践.png)
 
   > 具体绑定逻辑 写入对应 ViewHolder ，ViewHolder 声明 bindTo 方法。
 
@@ -86,7 +86,7 @@
 
 * ListView 缓存原理
 
-  ![ListView 缓存示图一](https://dingyx.oss-cn-shenzhen.aliyuncs.com/picgo/ListView 缓存示图一.png)
+  ![ListView 缓存示图一](https://dingyx.oss-cn-shenzhen.aliyuncs.com/picgo/ListView缓存示图一.png)
 
   * RecyclerBin
 
@@ -104,7 +104,7 @@
 
   * Create View
 
-  ![ListView 缓存示图二](https://dingyx.oss-cn-shenzhen.aliyuncs.com/picgo/ListView 缓存示图二.png)
+  ![ListView 缓存示图二](https://dingyx.oss-cn-shenzhen.aliyuncs.com/picgo/ListView缓存示图二.png)
 
   > 直接复用，不需要重新绑定数据的 item view，会跳过 getView 调用
   >
@@ -114,7 +114,7 @@
 
   
 
-  ![RecyclerView 缓存示图一](https://dingyx.oss-cn-shenzhen.aliyuncs.com/picgo/RecyclerView 缓存示图一.png)
+  ![RecyclerView 缓存示图一](https://dingyx.oss-cn-shenzhen.aliyuncs.com/picgo/RecyclerView缓存示图一.png)
 
   * Recycler 
 
@@ -140,7 +140,7 @@
 
     > 缓存池
 
-    ![](https://dingyx.oss-cn-shenzhen.aliyuncs.com/picgo/RecyclerView 缓存示图二.png)
+    ![](https://dingyx.oss-cn-shenzhen.aliyuncs.com/picgo/RecyclerView缓存示图二.png)
 
 ### ViewCacheExtension Example
 
