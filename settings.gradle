@@ -10,3 +10,4 @@ rootProject.name = "androidstudy"
 include ':app'
 include ':view-study'
 include ':http-study'
+include ':thread-study'
