@@ -1,5 +1,6 @@
 package com.sycamore.viewstudy.recyclerview;
 
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,6 +40,25 @@ public class DemoAdapter extends RecyclerView.Adapter<DemoAdapter.DemoViewHolder
         holder.name.setText(user.name);
     }
 
+    @Override
+    public void onBindViewHolder(@NonNull DemoViewHolder holder, int position, @NonNull List<Object> payloads) {
+        super.onBindViewHolder(holder, position, payloads);
+        if (payloads.isEmpty()) {
+            onBindViewHolder(holder, position);
+        } else {
+            Bundle payload = (Bundle) payloads.get(0);
+            for (String key : payload.keySet()) {
+                switch (key) {
+                    case User.KEY_NAME:
+                        holder.name.setText(payload.getString(key));
+                        break;
+                    // ......
+                    default:
+                        break;
+                }
+            }
+        }
+    }
 
     @Override
     public int getItemCount() {
