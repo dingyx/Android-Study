@@ -1,4 +1,4 @@
-package com.sycamore.thread_study;
+package com.sycamore.threadstudy;
 
 import androidx.appcompat.app.AppCompatActivity;
 

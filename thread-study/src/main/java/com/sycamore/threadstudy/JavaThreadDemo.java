@@ -1,7 +1,7 @@
-package com.sycamore.thread_study;
+package com.sycamore.threadstudy;
 
-import com.sycamore.thread_study.sync.SynchronizedDemo1;
-import com.sycamore.thread_study.sync.SynchronizedDemo2;
+import com.sycamore.threadstudy.sync.SynchronizedDemo1;
+import com.sycamore.threadstudy.sync.SynchronizedDemo2;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
@@ -10,6 +10,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.ThreadFactory;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @author dingyx
@@ -65,13 +66,12 @@ public class JavaThreadDemo {
      */
     static void threadFactory() {
         ThreadFactory factory = new ThreadFactory() {
-            int count = 0;
+            AtomicInteger count = new AtomicInteger(0);
 
             @Override
             public Thread newThread(Runnable r) {
                 // 可能两个线程一个名字
-                count++;
-                return new Thread(r, "Thread-" + count);
+                return new Thread(r, "Thread-" + count.incrementAndGet());
             }
         };
 

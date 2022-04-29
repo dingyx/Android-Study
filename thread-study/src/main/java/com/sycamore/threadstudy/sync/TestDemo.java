@@ -1,4 +1,4 @@
-package com.sycamore.thread_study.sync;
+package com.sycamore.threadstudy.sync;
 
 /**
  * @author dingyx

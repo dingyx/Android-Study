@@ -30,4 +30,6 @@
 
 ## thread-study
 
-> 多线程
+> [Thread 多线程](https://github.com/dingyx/Android-Study/blob/main/thread-study/doc/Thread.md) 
+
+* [JavaThreadDemo](https://github.com/dingyx/Android-Study/blob/main/thread-study/src/main/java/com/sycamore/threadstudy/JavaThreadDemo.java) Java 实现多线程 Demo

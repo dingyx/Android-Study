@@ -1,8 +1,9 @@
-package com.sycamore.thread_study.sync;
+package com.sycamore.threadstudy.sync;
 
 /**
  * @author dingyx
  * @description: SynchronizedDemo2
+ * synchronized 方法
  * @date: 2022/4/25
  */
 public class SynchronizedDemo2 implements TestDemo {
