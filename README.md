@@ -32,4 +32,4 @@
 
 > [Thread 多线程](https://github.com/dingyx/Android-Study/blob/main/thread-study/doc/Thread.md) 
 
-* [JavaThreadDemo](https://github.com/dingyx/Android-Study/blob/main/thread-study/src/main/java/com/sycamore/threadstudy/JavaThreadDemo.java) Java 实现多线程 Demo
+* [JavaThreadDemo](https://github.com/dingyx/Android-Study/blob/main/thread-study/src/main/java/com/sycamore/threadstudy/JavaThreadDemo.java) Java 多线程、线程安全 Demo

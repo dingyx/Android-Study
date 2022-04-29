@@ -2,6 +2,7 @@ package com.sycamore.threadstudy;
 
 import com.sycamore.threadstudy.sync.SynchronizedDemo1;
 import com.sycamore.threadstudy.sync.SynchronizedDemo2;
+import com.sycamore.threadstudy.sync.SynchronizedDemo3;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
@@ -144,5 +145,10 @@ public class JavaThreadDemo {
         synchronizedDemo2.runTest();
     }
 
+
+    static void runSynchronizedDemo3() {
+        SynchronizedDemo3 synchronizedDemo3 = new SynchronizedDemo3();
+        synchronizedDemo3.runTest();
+    }
 
 }
