@@ -18,7 +18,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @description: Java 实现多线程 Demo
  * @date: 2022/4/24
  */
-public class JavaThreadDemo {
+public class JavaMultiThreadDemo {
 
     public static void main(String[] args) {
 //        thread();
