@@ -1,4 +1,19 @@
 # Android-Study
+
+## http-study
+
+### [HTTP 原理和工作机制](https://github.com/dingyx/Android-Study/blob/main/http-study/doc/HTTP原理和工作机制.md)
+
+### [编码、加密、Hash、序列化和字符集](https://github.com/dingyx/Android-Study/blob/main/http-study/doc/编码、加密、Hash、序列化和字符集.md)
+
+### [登陆授权、TCP / IP、HTTPS](https://github.com/dingyx/Android-Study/blob/main/http-study/doc/登陆授权、TCP%20IP、HTTPS.md)
+
+### [Retrofit 源码解析](https://github.com/dingyx/Android-Study/blob/main/http-study/doc/Retrofit源码解析.md)
+
+### [OkHttp 源码解析](https://github.com/dingyx/Android-Study/blob/main/http-study/doc/OkHttp源码解析.md)
+
+
+
 ## view-study
 
 > View 绘制相关
@@ -27,6 +42,8 @@
 > [RecyclerView 说明](https://github.com/dingyx/Android-Study/blob/main/view-study/doc/RecyclerView.md) 
 
 * [RecyclerViewDemoActivity](https://github.com/dingyx/Android-Study/blob/main/view-study/src/main/java/com/sycamore/viewstudy/recyclerview/RecyclerViewDemoActivity.java)  RecyclerView 简单 demo
+
+
 
 ## thread-study
 
