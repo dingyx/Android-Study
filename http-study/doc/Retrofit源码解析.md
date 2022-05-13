@@ -37,11 +37,11 @@
 
 4. 使用 ```Call.execute()``` 或 ```Call.enqueue``` 来发起请求
 
-   ```
+   ```java
    repos.enqueue(callback);
    ```
 
-## 源码
+## 源码总结
 
 * 通过 Retrofit.create(Class)方法创建出 Service interface 的实例，从而使得 Service 中 配置的方法变得可用，这是Retrofit代码结构的核心；
 
@@ -66,9 +66,9 @@
 
      OkHttpCall 是 retrofit2.Call 的子类。这行代码负责将ServiceMethod封装进一个 retrofit2.Call 对象；而这个对象可以在需要的时候(例如它的 enqueue() 方法被调用的 时候，利用ServiceMethod中包含的信息来创建一个okhttp3.Call 对象，并调用这个 okhttp3.Call 对象来进行网络请求的发起，然后对结果进行预处理(如类型转换)。
 
-  3.  ```adapt()``` 方法：
+  3. ```adapt()``` 方法：
 
-     ```java
+     ```
      return serviceMethod.adapt(okHttpCall);
      ```
 
@@ -76,5 +76,5 @@
 
      另外，这个方法不止可以生成新的 retrofit2.Call 对象，也可以生成别的类型对象，例如 RxJava 的 Obervable ，来让 Retrofit 可以和 RxJava 结合使用。
 
-* 更细的代码逻辑（ServiceMethod 如果做方法解析、CallAdapter如果做adapt）
+* 更细的代码逻辑（ServiceMethod 如果做方法解析、CallAdapter如果做 adapt 等查看源码）
 
